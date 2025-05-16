@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Отзывы о фильмах{% endblock %}
+{% block content %}
+<h2 class="text-center mb-4">Отзывы о фильмах</h2>
+<div class="row d-flex justify-content-center">
+  {% for film in films %}
+  <div class="col-12 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ film.title }}</h5>
+        <p class="card-text"><strong>Описание:</strong> {{ film.description }}</p>
+        <h6 class="card-title">Отзыв о фильме</h6>
+        <p class="card-text">{{ film.review }}</p>
+      </div>
+    </div>
+  </div>
+  {% empty %}
+  <p class="text-center">Пока нет отзывов.</p>
+  {% endfor %}
+</div>
+{% endblock %}

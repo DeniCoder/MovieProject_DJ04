@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+<div class="text-center">
+  <h1>Добро пожаловать в Киноклуб!</h1>
+  <img src="{% static 'films/img/fotofilm.png' %}" alt="Киноклуб" class="img-fluid mb-4 custom-img-size">
+  <p>Выберите, что хотите сделать:</p>
+  <a href="{% url 'feedback' %}" class="btn btn-primary me-2">Посмотреть отзывы</a>
+  <a href="{% url 'new_feedback' %}" class="btn btn-success">Добавить отзыв</a>
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+body {
+    background-color: #f8f9fa; /* Светлый сероватый фон */
+}
+.navbar-custom {
+    background-color: #343a40; /* Темный фон для навбара */
+}
+.navbar-custom .nav-link, .navbar-custom .navbar-brand {
+    color: #ffffff !important; /* Белый текст */
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word; /* Перенос слов */
+}
+
+.card-text {
+    max-height: 150px; /* Ограничиваем высоту текста */
+    overflow-y: auto; /* Добавляем прокрутку, если текст слишком длинный */
+}
+
+.custom-img-size {
+    width: 30vw; /* 30% от ширины окна браузера */
+    height: auto;
+}
+
+footer {
+    background-color: #343a40; /* Темный цвет футера */
+    color: white; /* Белый текст */
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    margin-top: auto; /* Размещает футер внизу при растяжении flex-контейнера */
+}
+
+footer .white-box {
+    background-color: white; /* Белый цвет для прямоугольника */
+    color: #343a40; /* Цвет текста внутри белого прямоугольника */
+    border-radius: 15px; /* Закругленные углы */
+    display: inline-block; /* Чтобы белый блок не занимал всю ширину */
+    max-width: 50%; /* Ограничение ширины */
+    width: auto; /* Автоматическая ширина */
+    height: 5px;
+}
